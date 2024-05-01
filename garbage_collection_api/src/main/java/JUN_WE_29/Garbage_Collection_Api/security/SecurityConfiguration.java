@@ -30,6 +30,7 @@ public class SecurityConfiguration {
                     req->req.requestMatchers("/authenticate/**").permitAll()
                             .requestMatchers("/error/**").permitAll()
                             .requestMatchers("/api/auth/**").permitAll()
+                            .requestMatchers("/register/**").permitAll()
 //                            .requestMatchers("/users/**").hasAuthority("ADMIN")
                             .anyRequest().authenticated()
                 )
